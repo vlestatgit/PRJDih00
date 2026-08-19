@@ -333,7 +333,7 @@ public class Exercises {
 
     }
 
-    public static void lista04A() {
+    public static void lista04A()       {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
@@ -368,7 +368,7 @@ public class Exercises {
 
     }
 
-    public static void lista05() {
+    public static void lista05()        {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
@@ -407,7 +407,7 @@ public class Exercises {
 
     }
 
-    public static void lista06() {
+    public static void lista06()        {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
@@ -611,62 +611,7 @@ public class Exercises {
 
     }
 
-    public static void lista09() {
-
-        Random random = new Random();
-        Scanner input = new Scanner(System.in);
-
-        // Questão 1
-
-        mediaPonderada();
-
-        // Questão 2
-
-        int option;
-
-        do { menu(); option = input.nextInt(); } while (option != 3);
-
-        // Questão 3
-
-    }
-    public static void mediaPonderada() {
-
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Media Ponderada :\n\n");
-
-        System.out.print("Valor 1 : "); double val1 = input.nextDouble();
-        System.out.print("Valor 2 : "); double val2 = input.nextDouble();
-        System.out.print("Valor 3 : "); double val3 = input.nextDouble();
-        System.out.print("Peso  1 : "); double pon1 = input.nextDouble();
-        System.out.print("Peso  2 : "); double pon2 = input.nextDouble();
-        System.out.print("Peso  3 : "); double pon3 = input.nextDouble();
-
-        double mediaPonderada = ((val1*pon1) + (val2*pon2) + (val3*pon3)) / (pon1+pon2+pon3);
-
-        System.out.print("\nResultssss : " + mediaPonderada);
-
-    } // ( Lista 9 )
-    public static void menu() {
-
-        System.out.print("""
-                
-                =====
-                Menu
-                =====
-                
-                1) Inserir cliente
-                2) Remover cliente
-                3) Encerrar programa
-                
-                Digite a opção:
-                =====
-                
-                """);
-
-    } // ( Lista 9 )
-
-    public static void simulado() {
+    public static void simulado()       {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
@@ -845,7 +790,7 @@ public class Exercises {
 
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
