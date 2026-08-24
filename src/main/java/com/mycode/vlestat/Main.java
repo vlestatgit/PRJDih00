@@ -59,7 +59,6 @@ public class Main {
 
     }
 
-
     public static void main(String[] args) {
 
         Random random = new Random();
@@ -85,11 +84,11 @@ public class Main {
 
         // Questão 4
 
-        double[] X = bhaskara(1, 6, -3);
+        double[] root = bhaskara(1, 6, -3);
 
-        for (int i = 0; i <X.length; i++) {
+        for (int i = 0; i <root.length; i++) {
 
-            System.out.printf("\nX%d : %.2f", i+1, X[i]);
+            System.out.printf("\nX%d : %.2f", i+1, root[i]);
 
         }
 
