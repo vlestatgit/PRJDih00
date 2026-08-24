@@ -4,12 +4,13 @@ package com.mycode.vlestat;
 
 import java.util.Scanner;
 import java.util.Random;
+import java.lang.Integer;
+
 
 public class Homeworks {
 
     public static void homework01() throws InterruptedException {
 
-        Random random = new Random();
         Scanner input = new Scanner(System.in);
 
         System.out.print("Digite um valor inteiro : ");
@@ -25,7 +26,7 @@ public class Homeworks {
         System.out.print("\nDigite os segundos para uma contagem regressiva : ");
         num = input.nextInt();
 
-        System.out.println("");
+        System.out.println();
 
         for (int i = num; i >= 1; i -= 1) {
             Thread.sleep(1000);
@@ -36,7 +37,6 @@ public class Homeworks {
 
     public static void homework02() {
 
-        Random random = new Random();
         Scanner input = new Scanner(System.in);
 
         // Questão 1
@@ -44,11 +44,11 @@ public class Homeworks {
         System.out.print("Digite sua senha : ");
 
         for (String i = input.next(); !i.equals("1234bb"); i = input.next()) {
-            System.out.println("Senha incorreta\n");
+            System.out.print("Senha incorreta\n\n");
             System.out.print("Tente novamente : ");
         }
 
-        System.out.println("\nSeja bem vindo !");
+        System.out.print("\nSeja bem vindo !\n");
 
         // Questão 2
 
@@ -57,13 +57,14 @@ public class Homeworks {
         int fails = 1;
 
         for (String i = input.next(); !i.equals("1234bb"); i = input.next()) {
-            System.out.println("Senha incorreta\n");
+            System.out.print("Senha incorreta\n\n");
             System.out.print("Tente novamente : ");
             fails += 1;
         }
 
-        System.out.println("\nSeja bem vindo ! ");
-        System.out.println("Tentativa : " + fails);
+        System.out.print("\nSeja bem vindo !\n");
+        System.out.print("Tentativa : " + fails);
+        System.out.println();
 
     }
 
@@ -92,11 +93,11 @@ public class Homeworks {
 
         // Questão 2
 
-        System.out.println("\n===== Jogo de Adivinhação =====");
+        System.out.print("\n===== Jogo de Adivinhação =====\n");
 
         int randNum = random.nextInt(1, 11);
 
-        System.out.println("\nSorteamos um número entre 1 e 10\nTente acertar !");
+        System.out.print("\nSorteamos um número entre 1 e 10\nTente acertar !\n");
 
         System.out.print("\nDigite seu palpite : ");
         int pal = input.nextInt();
@@ -107,13 +108,13 @@ public class Homeworks {
             System.out.println("\nQue pena, você errou !");
         }
 
-        System.out.println("O número era : " + randNum);
+        System.out.print("O número era : " + randNum);
+        System.out.println();
 
     }
 
     public static void homework04() {
 
-        Random random = new Random();
         Scanner input = new Scanner(System.in);
 
         // Questão 1
@@ -139,7 +140,7 @@ public class Homeworks {
             bin += rest;
         }
 
-        System.out.println(new StringBuilder(bin).reverse().toString());
+        System.out.print(new StringBuilder(bin).reverse().toString());
 
     }
 

@@ -4,12 +4,12 @@ package com.mycode.vlestat;
 
 import java.util.Scanner;
 import java.util.Random;
+import java.lang.Integer;
 
 public class Exercises {
 
     public static void lista04() throws InterruptedException {
 
-        Random random = new Random();
         Scanner input = new Scanner(System.in);
 
         // Questão 1
@@ -31,7 +31,8 @@ public class Exercises {
 
         for (int i = 1; i <= num; i ++) {som += i;}
 
-        System.out.println("Somatório : " + som);
+        System.out.print("Somatório : " + som);
+        System.out.println();
 
         // Questão 3
 
@@ -42,11 +43,12 @@ public class Exercises {
 
         for (int i = 1; i <= num; i ++) {fac *= i;}
 
-        System.out.println("Fatorial : " + fac);
+        System.out.print("Fatorial : " + fac);
+        System.out.println();
 
         // Questão 4
 
-        System.out.println("\nDigite 10 valores reais : \n");
+        System.out.print("\nDigite 10 valores reais : \n\n");
 
         float soma = 0;
         float vals;
@@ -61,7 +63,8 @@ public class Exercises {
 
         float arit = soma / 10;
 
-        System.out.println("\nAritmetica : " + arit);
+        System.out.print("\nAritmetica : " + arit);
+        System.out.println();
 
         //Questão 5
 
@@ -82,7 +85,8 @@ public class Exercises {
 
         arit = soma / num;
 
-        System.out.println("\nAritmetica : " + arit);
+        System.out.print("\nAritmetica : " + arit);
+        System.out.println();
 
         // Questão 6
 
@@ -158,7 +162,7 @@ public class Exercises {
                     num = input.nextInt();
 
                     double root = Math.sqrt(num);
-                    System.out.println("Raiz : " +root+ "\n");
+                    System.out.print("Raiz : " +root+ "\n\n");
 
                     break;
 
@@ -171,7 +175,7 @@ public class Exercises {
                     int exp =  input.nextInt();
 
                     double power = Math.pow(num, exp);
-                    System.out.println("Raiz : " +power+ "\n");
+                    System.out.print("Raiz : " +power+ "\n\n");
 
                     break;
 
@@ -196,13 +200,14 @@ public class Exercises {
 
         }
 
-        System.out.println("E : " + E);
+        System.out.print("E : " + E);
+        System.out.println();
 
         // Questão 11
 
-        System.out.println("\nDigite 10 números :\n");
+        System.out.print("\nDigite 10 números :\n\n");
 
-        int vet[] = new int[10];
+        int[] vet = new int[10];
 
         for (int i = 0; i <= 9; i++) {vet[i] = input.nextInt();}
 
@@ -220,7 +225,8 @@ public class Exercises {
 
         }
 
-        System.out.println("\nMenor núrmero : " + vet[9]);
+        System.out.print("\nMenor núrmero : " + vet[9]);
+        System.out.println();
 
         // Questão 12
 
@@ -242,7 +248,8 @@ public class Exercises {
 
         }
 
-        System.out.println("\nMaior núrmero : " + vet[9]);
+        System.out.print("\nMaior núrmero : " + vet[9]);
+        System.out.println();
 
         // Questão 13
 
@@ -333,9 +340,8 @@ public class Exercises {
 
     }
 
-    public static void lista04A()       {
+    public static void lista04A() {
 
-        Random random = new Random();
         Scanner input = new Scanner(System.in);
 
         // Questão 1
@@ -368,10 +374,9 @@ public class Exercises {
 
     }
 
-    public static void lista05()        {
+    public static void lista05()  {
 
         Random random = new Random();
-        Scanner input = new Scanner(System.in);
 
         // Questão 1
 
@@ -407,15 +412,14 @@ public class Exercises {
 
     }
 
-    public static void lista06()        {
+    public static void lista06()  {
 
-        Random random = new Random();
         Scanner input = new Scanner(System.in);
 
         // Questão 1
 
-        System.out.println("Preencha a lista de idades :\n");
-        int ages[] = new int[10];
+        System.out.print("Preencha a lista de idades :\n\n");
+        int[] ages = new int[10];
 
         for (int i = 1; i <= 9; i++) {
             System.out.print("Pessoa " +i+ " : ");
@@ -441,26 +445,26 @@ public class Exercises {
         // Questão 2
 
 
-        System.out.println("\nPreencha as listas :");
+        System.out.print("\nPreencha as listas :\n");
 
-        System.out.println("\nNomes :\n");
-        String names[] = new String[6];
+        System.out.print("\nNomes :\n\n");
+        String[] names = new String[6];
 
         for (int i = 1; i <= 5; i++) {
             System.out.print("Pessoa " +i+ " : ");
             names[i] = input.next().toLowerCase();
         }
 
-        System.out.println("\nCidades :\n");
-        String cities[] = new String[6];
+        System.out.print("\nCidades :\n\n");
+        String[] cities = new String[6];
 
         for (int i = 1; i <= 5; i++) {
             System.out.print("Pessoa " +i+ " : ");
             cities[i] = input.next();
         }
 
-        System.out.println("\nSexos (M/F) :\n");
-        char sex[] = new char[6];
+        System.out.print("\nSexos (M/F) :\n\n");
+        char[] sex = new char[6];
 
         for (int i = 1; i <= 5; i++) {
             System.out.print("Pessoa " +i+ " : ");
@@ -471,7 +475,7 @@ public class Exercises {
 
         do {
 
-            System.out.println("\n\"Digite \"fim\" se quiser finalizar a pesquisa\"");
+            System.out.print("\n\"Digite \"fim\" se quiser finalizar a pesquisa\"\n");
 
             System.out.print("\nPesquisar por nome : ");
             search = input.next().toLowerCase();
@@ -488,12 +492,12 @@ public class Exercises {
 
         } while (!search.equals("fim"));
 
-        System.out.println("");
+        System.out.println();
 
         // Questão 3
 
-        String dogs[] = {"null","Dih","Nih","Fih","Lih","Pih"};
-        String race[] = {"null","dog","cat","alien","idk","black"};
+        String[] dogs = {"null","Dih","Nih","Fih","Lih","Pih"};
+        String[] race = {"null","dog","cat","alien","idk","black"};
 
         int id = 0;
         String options = "";
@@ -508,7 +512,7 @@ public class Exercises {
 
                     == Imprimir  == Pesquisar
                     == Editar    == Trocar
-                    == Executar  == Sair
+                    == Excluir  == Sair
 
                     """);
 
@@ -546,7 +550,7 @@ public class Exercises {
 
                     break;
 
-                case "executar" :
+                case "excluir" :
 
                     System.out.print("\nEscolha o id correspondente (1 a 5) : ");
                     id = input.nextInt();
@@ -554,7 +558,7 @@ public class Exercises {
                     dogs[id] = "xxxx";
                     race[id] = "xxxx";
 
-                    System.out.println("\n... Executado ...");
+                    System.out.print("\nExcluido\n");
 
                     break;
 
@@ -611,7 +615,421 @@ public class Exercises {
 
     }
 
-    public static void simulado()       {
+    public static void lista07()  {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println();
+
+        // Questão 1
+
+        int[] vRandom = new int[10];
+
+        for (int i = 0; i < vRandom.length; i++) {
+
+            vRandom[i] = random.nextInt(101);
+
+        }
+
+        int val;
+
+        do {
+
+            System.out.print("\nDigite um valor : ");
+            val = input.nextInt();
+
+            boolean valIn = false;
+
+            for (int i : vRandom) {
+
+                if (i == val) {
+
+                    valIn = true;
+                    break;
+
+                }
+
+            }
+
+            if (valIn) {System.out.printf("\nO Número %d está no vetor\n", val);}
+            else {System.out.printf("\nO Número %d não está no vetor\n", val);}
+
+        } while (val >= 0);
+
+        // Questão 2
+
+        String [] products = new String [10];
+        int    [] codes    = new int    [10];
+        double [] price    = new double [10];
+
+        int newProduct = 0;
+        int option;
+
+        do {
+
+            System.out.print("""
+                
+                ===== Menu =====
+                
+                1 -> Inserir Produto
+                2 -> Verificar Produtos acima de R$100,00
+                3 -> Sair
+                
+                Digite aqui :""" + " ");
+
+            option = input.nextInt();
+
+            switch (option) {
+
+                case 1 :
+
+                    if (newProduct > products.length) {
+
+                        System.out.print("\nLimite Atingido\n");
+                        break;
+
+                    }
+
+                    System.out.print("\nProduto (nome) : ");
+                    products[newProduct] = input.next();
+
+                    System.out.print("Código (xxx) : ");
+                    codes[newProduct] = input.nextInt();
+
+                    System.out.print("Preço (x.xx) : ");
+                    price[newProduct] = input.nextDouble();
+
+                    newProduct++;
+
+                    break;
+
+                case 2 :
+
+                    System.out.println("\n============================\nProdutos acima de R$100,00 :");
+
+                    for (int i = 0; i < price.length; i++) {
+
+                        if (price[i] >= 100) {
+
+                            System.out.printf("""
+                                    ============================
+                                    Produto : %s
+                                    Código : %d
+                                    Preço : R$%.2f
+                                    """,  products[i], codes[i], price[i]);
+
+                        }
+                    }
+
+                    break;
+
+                default :
+
+                    if (option != 3) {System.out.print("\nInválido\n");}
+
+                    break;
+
+            }
+
+        } while (option != 3);
+
+        // Questão 3
+
+        boolean[] bool = new boolean[10];
+
+        System.out.println("\nPreencha o vetor (true/false) : \n");
+
+        for (int i = 0; i < bool.length; i++) {
+
+            System.out.printf("Posição %d : ", i);
+            bool[i] = input.nextBoolean();
+
+        }
+
+        System.out.println();
+
+        for (int i = (bool.length) - 1; i > 0; i--) {
+
+            System.out.println(bool[i]);
+
+        }
+
+    }
+
+    public static void lista08()  {
+
+        Random random = new Random();
+
+        System.out.println();
+
+        // Questão 1
+
+        int[] randomNumbers = new int[20];
+
+        for (int i = 0; i < randomNumbers.length; i++) {randomNumbers[i] = random.nextInt(-256, 256);}
+
+        for (int randomNumber : randomNumbers) {System.out.print(randomNumber + " ");}
+
+        int smallNumber1 = Integer.MAX_VALUE;
+        int smallNumber2 = Integer.MAX_VALUE;
+
+        for (int randomNumber : randomNumbers) {
+
+            if (smallNumber1 > randomNumber) {
+
+                smallNumber2 = smallNumber1;
+                smallNumber1 = randomNumber;
+
+            } else if (smallNumber2 > randomNumber) {
+
+                smallNumber2 = randomNumber;
+
+            }
+
+        }
+
+        System.out.print("\n\n");
+
+        System.out.printf("1° Menor Número : %d\n2° Menor Número : %d\n\n", smallNumber1, smallNumber2);
+
+        // Questão 2
+
+        String[] names   = {"Lestat","Saulo","Albani","Bruh","Yes","No","A","B","C","D"};
+        String[] names5L = new String[names.length];
+
+        int newPosition = 0;
+
+        for (String i : names) {
+
+            if (i.length() >= 5) {
+
+                names5L[newPosition] = i;
+                newPosition++;
+
+            }
+        }
+
+        for (String i : names5L) {
+
+            if (i != null) {
+
+                System.out.println(i);
+
+            }
+        }
+
+        System.out.println();
+
+        // Questão 3
+
+        randomNumbers = new int[10];
+
+        for (int i = 0; i < randomNumbers.length; i++) {
+
+            int num = random.nextInt(-256, 256);
+            boolean repeated = false;
+
+            for (int j = 0; j < i; j++) {
+
+                if (randomNumbers[j] == num) {
+
+                    repeated = true;
+                    break;
+
+                }
+            }
+
+            if (repeated) {
+
+                i--;
+
+            } else {
+
+                randomNumbers[i] = num;
+
+            }
+        }
+
+        for (int randomNumber : randomNumbers) {
+
+            System.out.print(randomNumber + " ");
+
+        }
+
+    }
+
+    public static void lista09()  {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println();
+
+        // Questão 1
+
+        avgWeighted();
+
+        // Questão 2
+
+        int option;
+
+        do { menu(); option = input.nextInt(); } while (option != 3);
+
+        // Questão 3
+
+        int age = ageCalculation(2026, 2010);
+
+        System.out.printf("\nIdade : %d\n", age);
+
+        // Questão 4
+
+        double[] root = bhaskara(1, -5, 6);
+
+        if (root == null) {
+
+            System.out.print("\nNão há raízes\n");
+
+        } else {
+
+            for (int i = 0; i < root.length; i++) {
+
+                System.out.printf("\nX%d : %.2f", i+1, root[i]);
+
+            }
+        }
+
+        // Questão 5
+
+        double idealWeight = idealWeight('M', 1.72);
+
+        System.out.printf("\n\nPeso Ideal : %.2fKg\n\n", idealWeight);
+
+        // Questão 6
+
+        int[] vet = {10, 20, 30, 40, 50};
+
+        printVet(vet);
+
+        // Questão 7
+
+        System.out.println();
+
+        String[] names = {"Lestat","Saulo","Albani","Bruh","Yes"};
+        String[] names5L = names5L(names);
+
+        for (String i : names5L) {
+
+            if (i != null) {
+
+                System.out.println(i);
+
+            }
+        }
+
+        // Questão 8
+
+        int randomNumber = limitRandom(100);
+        System.out.print("\n" + randomNumber);
+
+    }
+
+        public static void menu()                                       {
+
+        System.out.print("""
+                
+                =====
+                Menu
+                =====
+                
+                1) Inserir cliente
+                2) Remover cliente
+                3) Encerrar programa
+                
+                Digite a opção :""" + " ");
+
+    }
+        public static void avgWeighted()                                {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Media Ponderada :\n\n");
+
+        System.out.print("Valor 1 : "); double val1 = input.nextDouble();
+        System.out.print("Valor 2 : "); double val2 = input.nextDouble();
+        System.out.print("Valor 3 : "); double val3 = input.nextDouble();
+        System.out.print("Peso  1 : "); double wei1 = input.nextDouble();
+        System.out.print("Peso  2 : "); double wei2 = input.nextDouble();
+        System.out.print("Peso  3 : "); double wei3 = input.nextDouble();
+
+        double mediaPonderada = ((val1*wei1) + (val2*wei2) + (val3*wei3)) / (wei1+wei2+wei3);
+
+        System.out.printf("\nResultssss : %f\n", mediaPonderada);
+
+    }
+        public static int ageCalculation(int yearCurrect, int yearBorn) {
+
+        return(yearCurrect-yearBorn);
+
+    }
+        public static double[] bhaskara(double A, double B, double C)   {
+
+        double delta = (B*B) - 4 * A * C ;
+
+        if (delta < 0) {return null;}
+
+        double X1 = (-B + Math.sqrt(delta)) / (2 * A) ;
+        double X2 = (-B - Math.sqrt(delta)) / (2 * A) ;
+
+        if (delta > 0)  {return new double[] {X1, X2};}
+
+        return new double[] {X1};
+
+    }
+        public static double idealWeight(char sex, double hight)        {
+
+        double idealMW  = (72.7 * hight) - 58.0;
+        double idealFW  = (62.1 * hight) - 44.7;
+
+        if (sex == 'M') {return idealMW;}
+        if (sex == 'F') {return idealFW;}
+
+        return 0;
+
+    }
+        public static void printVet(int[] vet)                          {
+
+        for (int i : vet) {
+            System.out.println(i);
+        }
+
+    }
+        public static String[] names5L(String[] names)                  {
+
+        String[] names5L = new String[names.length];
+
+        int newPosition = 0;
+
+        for (String i : names) {
+
+            if (i.length() >= 5) {
+
+                names5L[newPosition] = i;
+                newPosition++;
+
+            }
+        }
+
+        return names5L;
+
+    }
+        public static int limitRandom(int max)                          {
+
+        Random random = new Random();
+        return random.nextInt(1, max+1);
+
+    }
+
+    public static void simulado() {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
@@ -657,7 +1075,7 @@ public class Exercises {
                         namesLength -- ;
                         addressesLength -- ;
 
-                        System.out.println("\nNão é possivel realizar o cadastro. Limite atingido.");
+                        System.out.print("\nNão é possivel realizar o cadastro. Limite atingido.\n");
                         break;
 
                     }
@@ -668,7 +1086,7 @@ public class Exercises {
                     System.out.print("Digite seu endereço : ");
                     addresses[addressesLength] = input.next();
 
-                    System.out.println("\nCadastro concluido com sucesso!");
+                    System.out.print("\nCadastro concluido com sucesso!\n");
 
                     break;
 
@@ -695,7 +1113,7 @@ public class Exercises {
                                 namesLength -- ;
                                 addressesLength -- ;
 
-                                System.out.println("\nCadastro excluido com sucesso !\n");
+                                System.out.print("\nCadastro excluido com sucesso !\n\n");
 
                                 break;
 
@@ -705,14 +1123,14 @@ public class Exercises {
 
                         if (register == 9) {
 
-                            System.out.println("\nNenhum cadastro encontrado");
+                            System.out.print("\nNenhum cadastro encontrado\n");
                             break;
 
                         }
 
                         if (fail == 9) {
 
-                            System.out.println("\nNão encontrado");
+                            System.out.print("\nNão encontrado\n");
                             break;
 
                         }
@@ -747,19 +1165,19 @@ public class Exercises {
 
                         if (names[i] != null) {
 
-                            if (names[i].toLowerCase().equals("maria")) {marias ++ ;}
+                            if (names[i].equalsIgnoreCase("maria")) {marias ++ ;}
 
                         }
 
                     }
 
-                    System.out.println("\nForam cadastradas " +marias+ " pessoas chamadas Maria.");
+                    System.out.print("\nForam cadastradas " +marias+ " pessoas chamadas Maria.\n");
 
                     break;
 
                 case 'e' : break;
 
-                default : System.out.println("\nComando Inválido"); break;
+                default : System.out.print("\nComando Inválido\n"); break;
 
             }
 
@@ -790,7 +1208,7 @@ public class Exercises {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
