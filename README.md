@@ -2,11 +2,11 @@
 
 ***@author vlestat***
 
-**Projeto de estudos :3**
+**Study Project :3**
 
-***( Feito no intelliJ )***
+***( Made in intelliJ IDEA )***
 
-**( Códigos aqui : "PRJDih00\src\main\java\com.mycode.vlestat" )**
+**( Codes here : "PRJDih00\src\main\java\com.mycode.vlestat" )**
 
 ```
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
