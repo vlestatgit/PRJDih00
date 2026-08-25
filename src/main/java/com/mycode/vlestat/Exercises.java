@@ -1235,7 +1235,13 @@ public class Exercises {
 
         String[] vetorString = {"Albani", "Zulu", "Leslat", "Yes", "No"};
 
-        vetCleaner(vetorString);
+        for (String i : vetorString) {
+
+            System.out.println(i);
+
+        }
+
+        vetCleaner(vetorString); System.out.println();
 
         for (String i : vetorString) {
 
