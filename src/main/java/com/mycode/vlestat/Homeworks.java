@@ -4,8 +4,8 @@ package com.mycode.vlestat;
 
 import java.util.Scanner;
 import java.util.Random;
+import java.util.Arrays;
 import java.lang.Integer;
-
 
 public class Homeworks {
 
@@ -67,7 +67,6 @@ public class Homeworks {
         System.out.println();
 
     }
-
     public static void homework03() {
 
         Random random = new Random();
@@ -112,7 +111,6 @@ public class Homeworks {
         System.out.println();
 
     }
-
     public static void homework04() {
 
         Scanner input = new Scanner(System.in);
@@ -146,11 +144,7 @@ public class Homeworks {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Random random = new Random();
-        Scanner input = new Scanner(System.in);
 
-        System.out.println();
 
     }
-
 }

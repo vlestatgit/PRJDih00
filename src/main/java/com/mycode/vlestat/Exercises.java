@@ -4,6 +4,7 @@ package com.mycode.vlestat;
 
 import java.util.Scanner;
 import java.util.Random;
+import java.util.Arrays;
 import java.lang.Integer;
 
 public class Exercises {
@@ -373,7 +374,6 @@ public class Exercises {
         float num = input.nextFloat();
 
     }
-
     public static void lista05()  {
 
         Random random = new Random();
@@ -411,7 +411,6 @@ public class Exercises {
         }
 
     }
-
     public static void lista06()  {
 
         Scanner input = new Scanner(System.in);
@@ -614,7 +613,6 @@ public class Exercises {
         } while (!options.equals("sair"));
 
     }
-
     public static void lista07()  {
 
         Scanner input = new Scanner(System.in);
@@ -756,7 +754,6 @@ public class Exercises {
         }
 
     }
-
     public static void lista08()  {
 
         Random random = new Random();
@@ -858,7 +855,6 @@ public class Exercises {
         }
 
     }
-
     public static void lista09()  {
 
         Scanner input = new Scanner(System.in);
@@ -947,7 +943,7 @@ public class Exercises {
                 
                 Digite a opção :""" + " ");
 
-    }
+    } // Lista 09
         public static void avgWeighted()                                {
 
         Scanner input = new Scanner(System.in);
@@ -965,12 +961,12 @@ public class Exercises {
 
         System.out.printf("\nResultssss : %f\n", mediaPonderada);
 
-    }
+    } // *
         public static int ageCalculation(int yearCurrect, int yearBorn) {
 
         return(yearCurrect-yearBorn);
 
-    }
+    } // *
         public static double[] bhaskara(double A, double B, double C)   {
 
         double delta = (B*B) - 4 * A * C ;
@@ -984,7 +980,7 @@ public class Exercises {
 
         return new double[] {X1};
 
-    }
+    } // *
         public static double idealWeight(char sex, double hight)        {
 
         double idealMW  = (72.7 * hight) - 58.0;
@@ -995,14 +991,14 @@ public class Exercises {
 
         return 0;
 
-    }
+    } // *
         public static void printVet(int[] vet)                          {
 
         for (int i : vet) {
             System.out.println(i);
         }
 
-    }
+    } // *
         public static String[] names5L(String[] names)                  {
 
         String[] names5L = new String[names.length];
@@ -1021,15 +1017,15 @@ public class Exercises {
 
         return names5L;
 
-    }
+    } // *
         public static int limitRandom(int max)                          {
 
         Random random = new Random();
         return random.nextInt(1, max+1);
 
-    }
+    } // *
 
-    public static void simulado() {
+    public static void simulado01() {
 
         Random random = new Random();
         Scanner input = new Scanner(System.in);
@@ -1207,14 +1203,103 @@ public class Exercises {
         }
 
     }
-
-    public static void main(String[] args) throws InterruptedException {
+    public static void simulado02() {
 
         Random random = new Random();
-        Scanner input = new Scanner(System.in);
+
+        // Questão 1
+
+        newSalary(6767.67, 67);
+
+        // Questão 2
+
+        int[] vetorInt = new int[10];
+
+        for (int i = 0; i < vetorInt.length; i++) {
+
+            vetorInt[i] = random.nextInt(-256, 256);
+
+        }
+
+        int majorVal = majorVal(vetorInt);
+
+        for (int i : vetorInt) {
+
+            System.out.print(i + " ");
+
+        }
+
+        System.out.printf("\n\nMaior Número : %d\n\n", majorVal);
+
+        // Questão 3
+
+        String[] vetorString = {"Albani", "Zulu", "Leslat", "Yes", "No"};
+
+        vetCleaner(vetorString);
+
+        for (String i : vetorString) {
+
+            System.out.println(i);
+
+        }
+
+        // Questão 4
 
         System.out.println();
 
+        int[] randomVals = randomVals(256);
+
+        for (int i : randomVals) {
+
+            System.out.print(i + " ");
+
+        }
+
     }
 
+        public static void newSalary(double salary, double increasePercent) {
+
+        double newSalary = salary + ((salary * increasePercent) / 100);
+        System.out.printf("\nNovo Salário : %.2f\n\n", newSalary);
+
+    } // Simulado 02
+        public static int majorVal(int[] vetor)                             {
+
+        int majorVal = Integer.MIN_VALUE;
+
+        for (int i : vetor) {
+
+            if (i > majorVal) {majorVal = i;}
+
+        }
+
+        return majorVal;
+
+    } // *
+        public static void vetCleaner(String[] vetor)                       {
+
+        Arrays.fill(vetor, null);
+
+    } // *
+        public static int[] randomVals(int bound)                           {
+
+        Random random = new Random();
+
+        int[] vetInt = new int[10];
+
+        for (int i = 0; i < vetInt.length; i++) {
+
+            vetInt[i] = random.nextInt(1, bound);
+
+        }
+
+        return vetInt;
+
+    } // *
+
+    public static void main(String[] args) throws InterruptedException {
+
+
+
+    }
 }
