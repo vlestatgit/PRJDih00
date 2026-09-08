@@ -4,9 +4,7 @@
 
 **Study Project :3**
 
-***( Made in intelliJ IDEA )***
-
-**( Codes here : "PRJDih00\src\main\java\com.mycode.vlestat" )**
+***( Made with intelliJ IDEA )***
 
 ```
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
