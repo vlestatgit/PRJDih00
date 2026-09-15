@@ -2,18 +2,24 @@ package com.mycode.vlestat.main;
 
 // @author vlestat
 
-import com.mycode.vlestat.objects.Retangulo;
+import com.mycode.vlestat.objects.Matematica;
+
+import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Retangulo re1 = new Retangulo();
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+        Matematica Math = new Matematica();
 
-        re1.cor = "azul";
-        re1.altura = 10;
-        re1.base = 10;
+        System.out.println();
 
-        System.out.print(re1.toString());
+        System.out.print("Digite um número : ");
+        float num = input.nextFloat();
+
+        System.out.printf("\nPositivo : %b\nZero : %b\n", Math.isPositive(num), Math.isZero(num));
 
     }
 }
