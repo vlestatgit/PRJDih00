@@ -1,4 +1,4 @@
-package com.mycode.vlestat;
+package com.mycode.vlestat.main;
 
 // @author vlestat
 

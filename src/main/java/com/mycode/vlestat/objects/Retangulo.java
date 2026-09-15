@@ -6,15 +6,7 @@ public class Retangulo {
     public float base;
     public float altura;
 
-    public float area() {
+    public float area()      { return base*altura; }
+    public String toString() { return "\nCor : " + cor + "\nArea : " + area(); }
 
-        return base*altura;
-
-    }
-
-    public String toString() {
-
-        return "\nCor : " + cor + "\nArea : " + area();
-
-    }
 }
