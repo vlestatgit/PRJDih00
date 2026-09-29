@@ -1,8 +1,6 @@
-package com.mycode.vlestat.objects;
+package com.mycode.vlestat.objects.lista10;
 
-// @author vlestat
-
-public class Matematica {
+public class Mathematics {
 
     public boolean isPositive(float num) { return ( num > 0 ); }
     public boolean isZero(float num)     { return ( num == 0 );     }

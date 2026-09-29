@@ -1,8 +1,8 @@
-package com.mycode.vlestat.objects;
+package com.mycode.vlestat.objects.lista10;
 
 import java.util.Scanner;
 
-public class Calculadora {
+public class Calculator {
 
     public void menu() {
 

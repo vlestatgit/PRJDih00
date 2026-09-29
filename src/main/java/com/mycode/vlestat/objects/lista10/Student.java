@@ -1,6 +1,6 @@
-package com.mycode.vlestat.objects;
+package com.mycode.vlestat.objects.lista10;
 
-public class Aluno {
+public class Student {
 
     public int matricula;
     public String nome;
