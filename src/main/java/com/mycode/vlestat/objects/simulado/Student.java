@@ -2,35 +2,33 @@ package com.mycode.vlestat.objects.simulado;
 
 public class Student {
 
-    private String registry;
+    private String id;
     private String name;
-    private float grade;
+    private float  grade;
 
-    public void constructor(String R, String N, float G) {
+    public Student(String registry, String name, float grade) {
 
-        registry = R;
-        name = N;
-        grade = G;
+        this.id    = registry;
+        this.name  = name;
+        this.grade = grade;
 
     }
 
-    public String getRegistry() { return registry; }
-    public String getName()     { return name; }
-    public float getGrade()     { return grade; }
+    public String getId()    { return id; }
+    public String getName()  { return name; }
+    public float  getGrade() { return grade; }
 
-    public void setRegistry(String R) { registry = R; }
-    public void setName(String N)     { name = N; }
-    public void setGrade(float G)     { grade = G; }
+    public void setId(String id)      { this.id = id; }
+    public void setName(String name)  { this.name = name; }
+    public void setGrade(float grade) { this.grade = grade; }
 
     public boolean aproved() { return grade >= 60; }
 
-    public String string() {
+    public String toString() {
 
-        return  " Matrícula : " +registry+
-                " Nome : "      +name+
-                " Nota : "      +grade;
+        return  "\nMatrícula : " +id+
+                "\nNome      : " +name+
+                "\nNota      : " +grade;
 
     }
-
-
 }
