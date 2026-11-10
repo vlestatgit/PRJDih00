@@ -5,7 +5,7 @@ package com.mycode.vlestat;
 import com.mycode.vlestat.objects.lista10.Student;
 import com.mycode.vlestat.objects.lista10.Calculator;
 import com.mycode.vlestat.objects.lista10.Mathematics;
-import com.mycode.vlestat.objects.simulado.Registry;
+import com.mycode.vlestat.objects.simulado01.Registry;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -55,7 +55,7 @@ public class Exercises {
 
     }
 
-    public static void Simulado() {
+    public static void Simulado01() {
 
         Registry registry = new Registry();
         registry.menu();

@@ -1,4 +1,4 @@
-package com.mycode.vlestat.objects.simulado;
+package com.mycode.vlestat.objects.simulado01;
 
 import java.util.Scanner;
 
